@@ -108,7 +108,10 @@ namespace Zoro_Client.UI
         private void BtnSend_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(tbxGasLimit.Text))
+            {
                 MessageBox.Show("Please estimategas first!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             UInt160 to;
             Decimal value;

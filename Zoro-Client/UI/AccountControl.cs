@@ -194,15 +194,13 @@ namespace Zoro_Client.UI
         private void BtnTransferZoro_Click(object sender, EventArgs e)
         {
             TransferFrm transferFrm = new TransferFrm(Account, "0x0000000000000000000000000000000000000001", "ZORO", 8);
-            transferFrm.Show();
-            transferFrm.TopMost = true;
+            transferFrm.ShowDialog();           
         }
 
         private void BtnTransferBct_Click(object sender, EventArgs e)
         {
             TransferFrm transferFrm = new TransferFrm(Account, "0x0000000000000000000000000000000000000002", "BCT", 8);
-            transferFrm.Show();
-            transferFrm.TopMost = true;
+            transferFrm.ShowDialog();          
         }
     }
 }

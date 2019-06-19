@@ -88,9 +88,10 @@ namespace Zoro_Client.UI
 
         private void BtnTransfer_Click(object sender, EventArgs e)
         {
-            TransferFrm transferFrm = new TransferFrm(Account, AssetHash.ToString(), AssetSymbol, Decimals);
-            transferFrm.Show();
-            transferFrm.TopMost = true;
+            using (TransferFrm transferFrm = new TransferFrm(Account, AssetHash.ToString(), AssetSymbol, Decimals))
+            {
+                transferFrm.ShowDialog();
+            }                   
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TransferFrm));
             this.lblAsset = new System.Windows.Forms.Label();
             this.tbxFrom = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -158,7 +159,7 @@
             this.btnEstimateGas.Name = "btnEstimateGas";
             this.btnEstimateGas.Size = new System.Drawing.Size(90, 25);
             this.btnEstimateGas.TabIndex = 36;
-            this.btnEstimateGas.Text = "EstimateGas";
+            this.btnEstimateGas.Text = "EstimateFee";
             this.btnEstimateGas.UseVisualStyleBackColor = false;
             this.btnEstimateGas.Click += new System.EventHandler(this.BtnEstimateGas_Click);
             // 
@@ -260,10 +261,10 @@
             this.Controls.Add(this.tbxFrom);
             this.Controls.Add(this.lblAsset);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TransferFrm";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Transaction";
             this.ResumeLayout(false);

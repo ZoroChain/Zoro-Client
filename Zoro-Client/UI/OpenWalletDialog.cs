@@ -58,6 +58,5 @@ namespace Zoro_Client.UI
                 textBox1.Text = openFileDialog1.FileName;
             }
         }
-
     }
 }

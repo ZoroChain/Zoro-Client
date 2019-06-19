@@ -189,7 +189,7 @@
             this.MinimizeBox = false;
             this.Name = "ViewPrivateKeyDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "ViewPrivateKeyDialog";
+            this.Text = "View PrivateKey";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

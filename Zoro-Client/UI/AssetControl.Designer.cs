@@ -42,7 +42,7 @@
             this.lblBalance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblBalance.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblBalance.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblBalance.Location = new System.Drawing.Point(663, 0);
+            this.lblBalance.Location = new System.Drawing.Point(679, 0);
             this.lblBalance.Name = "lblBalance";
             this.lblBalance.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
             this.lblBalance.Size = new System.Drawing.Size(127, 33);
@@ -55,7 +55,7 @@
             this.lblAsset.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblAsset.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblAsset.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblAsset.Location = new System.Drawing.Point(306, 0);
+            this.lblAsset.Location = new System.Drawing.Point(320, 0);
             this.lblAsset.Name = "lblAsset";
             this.lblAsset.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
             this.lblAsset.Size = new System.Drawing.Size(351, 33);
@@ -71,7 +71,7 @@
             this.lblAddress.Location = new System.Drawing.Point(3, 0);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.lblAddress.Size = new System.Drawing.Size(297, 33);
+            this.lblAddress.Size = new System.Drawing.Size(311, 33);
             this.lblAddress.TabIndex = 26;
             this.lblAddress.Text = "AcQLYjGbQU2bEQ8RKFXUcf8XvromfUQodq";
             // 
@@ -95,9 +95,9 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.92145F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.07855F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.9697F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.0303F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
             this.tableLayoutPanel1.Controls.Add(this.lblAddress, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnTransfer, 3, 0);

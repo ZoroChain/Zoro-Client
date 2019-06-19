@@ -288,6 +288,12 @@
     <Compile Include="UI\OpenWalletDialog.Designer.cs">
       <DependentUpon>OpenWalletDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Publish Contract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Publish Contract.Designer.cs">
+      <DependentUpon>Publish Contract.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\SplashScreen.cs" />
     <Compile Include="UI\TransferFrm.cs">
       <SubType>Form</SubType>
@@ -342,6 +348,9 @@
     </Compile>
     <EmbeddedResource Include="UI\OpenWalletDialog.resx">
       <DependentUpon>OpenWalletDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Publish Contract.resx">
+      <DependentUpon>Publish Contract.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\TransferFrm.resx">
       <DependentUpon>TransferFrm.cs</DependentUpon>

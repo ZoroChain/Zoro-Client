@@ -47,9 +47,10 @@
             this.创建钱包数据库NToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.打开钱包数据库OToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.退出XToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contractToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.publishContractToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.invokeContractToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addAssetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查看帮助VToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,8 +81,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.publishContractToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.invokeContractToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -208,7 +207,6 @@
             this.创建钱包数据库NToolStripMenuItem,
             this.打开钱包数据库OToolStripMenuItem,
             this.toolStripSeparator1,
-            this.toolStripSeparator2,
             this.退出XToolStripMenuItem});
             this.钱包WToolStripMenuItem.Name = "钱包WToolStripMenuItem";
             this.钱包WToolStripMenuItem.Size = new System.Drawing.Size(56, 21);
@@ -233,11 +231,6 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(213, 6);
             // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(213, 6);
-            // 
             // 退出XToolStripMenuItem
             // 
             this.退出XToolStripMenuItem.Name = "退出XToolStripMenuItem";
@@ -253,6 +246,19 @@
             this.contractToolStripMenuItem.Name = "contractToolStripMenuItem";
             this.contractToolStripMenuItem.Size = new System.Drawing.Size(69, 21);
             this.contractToolStripMenuItem.Text = "Contract";
+            // 
+            // publishContractToolStripMenuItem
+            // 
+            this.publishContractToolStripMenuItem.Name = "publishContractToolStripMenuItem";
+            this.publishContractToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.publishContractToolStripMenuItem.Text = "Publish Contract";
+            this.publishContractToolStripMenuItem.Click += new System.EventHandler(this.PublishContractToolStripMenuItem_Click);
+            // 
+            // invokeContractToolStripMenuItem
+            // 
+            this.invokeContractToolStripMenuItem.Name = "invokeContractToolStripMenuItem";
+            this.invokeContractToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.invokeContractToolStripMenuItem.Text = "Invoke Contract";
             // 
             // addAssetToolStripMenuItem
             // 
@@ -519,18 +525,6 @@
             this.tabPage3.Text = "Trans";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // publishContractToolStripMenuItem
-            // 
-            this.publishContractToolStripMenuItem.Name = "publishContractToolStripMenuItem";
-            this.publishContractToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.publishContractToolStripMenuItem.Text = "Publish Contract";
-            // 
-            // invokeContractToolStripMenuItem
-            // 
-            this.invokeContractToolStripMenuItem.Name = "invokeContractToolStripMenuItem";
-            this.invokeContractToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.invokeContractToolStripMenuItem.Text = "Invoke Contract";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -585,7 +579,6 @@
         private System.Windows.Forms.ToolStripMenuItem 创建钱包数据库NToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 打开钱包数据库OToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem 退出XToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 帮助HToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 查看帮助VToolStripMenuItem;

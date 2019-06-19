@@ -250,16 +250,8 @@ namespace Zoro_Client.UI
 
             TimeSpan persistence_span = DateTime.UtcNow - persistence_time;
             if (persistence_span < TimeSpan.Zero) persistence_span = TimeSpan.Zero;
-           
-            //if (persistence_span > Blockchain.TimePerBlock)
-            //{
-                toolStripProgressBar1.Style = ProgressBarStyle.Marquee;
-            //}
-            //else
-            //{
-            //    toolStripProgressBar1.Value = persistence_span.Seconds;
-            //    toolStripProgressBar1.Style = ProgressBarStyle.Blocks;
-            //}
+            
+            toolStripProgressBar1.Style = ProgressBarStyle.Marquee;
 
             RefreshBalance();
         }
@@ -323,10 +315,21 @@ namespace Zoro_Client.UI
             {
                 if (addAssetFrm.ShowDialog() != DialogResult.OK) return;
                 panel4.Controls.Clear();
-                foreach (string asset in Settings.Default.NEP5Watched.OfType<string>().ToArray())
+                if (Program.Wallet != null)
                 {
-                    RefreshAsset(asset);
+                    foreach (string asset in Settings.Default.NEP5Watched.OfType<string>().ToArray())
+                    {
+                        RefreshAsset(asset);
+                    }
                 }
+            }
+        }
+
+        private void PublishContractToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (PublishContractFrm publishContractFrm = new PublishContractFrm())
+            {
+                publishContractFrm.ShowDialog();
             }
         }
     }
