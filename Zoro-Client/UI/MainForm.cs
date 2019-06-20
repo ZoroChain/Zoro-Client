@@ -75,6 +75,7 @@ namespace Zoro_Client.UI
                 }
                 catch (CryptographicException)
                 {
+                    SplashScreen.Close();
                     MessageBox.Show(Strings.PasswordIncorrect);
                     return;
                 }               
