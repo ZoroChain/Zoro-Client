@@ -233,11 +233,23 @@
     <Compile Include="UI\AccountControl.Designer.cs">
       <DependentUpon>AccountControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\AccountFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AccountFrm.Designer.cs">
+      <DependentUpon>AccountFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\AddAssetFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\AddAssetFrm.Designer.cs">
       <DependentUpon>AddAssetFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\AddressControl.Designer.cs">
+      <DependentUpon>AddressControl.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\AppChainService.cs" />
     <Compile Include="UI\AssetControl.cs">
@@ -257,6 +269,12 @@
     </Compile>
     <Compile Include="UI\CreateWalletDialog.Designer.cs">
       <DependentUpon>CreateWalletDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HomeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\HomeFrm.Designer.cs">
+      <DependentUpon>HomeFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\ImportPrivateKeyDialog.cs">
       <SubType>Form</SubType>
@@ -311,8 +329,14 @@
     <EmbeddedResource Include="UI\AccountControl.resx">
       <DependentUpon>AccountControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\AccountFrm.resx">
+      <DependentUpon>AccountFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\AddAssetFrm.resx">
       <DependentUpon>AddAssetFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddressControl.resx">
+      <DependentUpon>AddressControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\AssetControl.resx">
       <DependentUpon>AssetControl.cs</DependentUpon>
@@ -322,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CreateWalletDialog.resx">
       <DependentUpon>CreateWalletDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\HomeFrm.resx">
+      <DependentUpon>HomeFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ImportPrivateKeyDialog.resx">
       <DependentUpon>ImportPrivateKeyDialog.cs</DependentUpon>

@@ -19,7 +19,7 @@ namespace Zoro_Client
     {
         public static MainService MainService;
         public static Wallet Wallet;
-        public static MainForm MainForm;
+        public static HomeForm HomeForm;
 
         private static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
@@ -60,7 +60,7 @@ namespace Zoro_Client
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             MainService = new MainService();
-            Application.Run(MainForm = new MainForm());
+            Application.Run(HomeForm = new HomeForm());
         }
 
     }

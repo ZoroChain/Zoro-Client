@@ -25,7 +25,7 @@ namespace Zoro_Client.UI
                 try
                 {
                     tbxContractPath.Text = openFileDialog1.FileName;
-                    tbxContractName.Text = openFileDialog1.FileName.Replace(".avm", "");
+                    tbxContractName.Text = System.IO.Path.GetFileNameWithoutExtension(openFileDialog1.FileName);
                     var contractScript = System.IO.File.ReadAllBytes(openFileDialog1.FileName);
                     var contractHash = contractScript.ToScriptHash();
                     tbxContractHash.Text = contractHash.ToString();

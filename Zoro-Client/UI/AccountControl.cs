@@ -174,22 +174,7 @@ namespace Zoro_Client.UI
             {
                 dialog.ShowDialog();
             }
-        }
-
-        private void AccountFrm_Enter(object sender, EventArgs e)
-        {
-            this.BackColor = Color.Cyan;
-        }
-
-        private void AccountFrm_MouseEnter(object sender, MouseEventArgs e)
-        {
-            this.BackColor = Color.Cyan;
-        }
-
-        private void AccountFrm_MouseLeave(object sender, EventArgs e)
-        {
-            this.BackColor = Color.White;
-        }
+        }              
 
         private void BtnTransferZoro_Click(object sender, EventArgs e)
         {

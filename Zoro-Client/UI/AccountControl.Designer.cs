@@ -53,7 +53,7 @@
             this.lblAddress.Location = new System.Drawing.Point(3, 0);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.lblAddress.Size = new System.Drawing.Size(341, 33);
+            this.lblAddress.Size = new System.Drawing.Size(385, 33);
             this.lblAddress.TabIndex = 21;
             this.lblAddress.Text = "AcQLYjGbQU2bEQ8RKFXUcf8XvromfUQodq";
             this.lblAddress.DoubleClick += new System.EventHandler(this.AccountFrm_DoubleClick);
@@ -66,7 +66,7 @@
             this.lblZoro.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblZoro.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblZoro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblZoro.Location = new System.Drawing.Point(350, 0);
+            this.lblZoro.Location = new System.Drawing.Point(394, 0);
             this.lblZoro.Name = "lblZoro";
             this.lblZoro.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
             this.lblZoro.Size = new System.Drawing.Size(109, 33);
@@ -115,7 +115,7 @@
             this.lblBct.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblBct.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblBct.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblBct.Location = new System.Drawing.Point(586, 0);
+            this.lblBct.Location = new System.Drawing.Point(630, 0);
             this.lblBct.Name = "lblBct";
             this.lblBct.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
             this.lblBct.Size = new System.Drawing.Size(109, 33);
@@ -131,7 +131,7 @@
             this.btnTransferZoro.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnTransferZoro.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTransferZoro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnTransferZoro.Location = new System.Drawing.Point(490, 4);
+            this.btnTransferZoro.Location = new System.Drawing.Point(534, 4);
             this.btnTransferZoro.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTransferZoro.Name = "btnTransferZoro";
             this.btnTransferZoro.Size = new System.Drawing.Size(70, 25);
@@ -148,7 +148,7 @@
             this.btnTransferBct.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnTransferBct.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTransferBct.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnTransferBct.Location = new System.Drawing.Point(711, 4);
+            this.btnTransferBct.Location = new System.Drawing.Point(755, 4);
             this.btnTransferBct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTransferBct.Name = "btnTransferBct";
             this.btnTransferBct.Size = new System.Drawing.Size(70, 25);
@@ -175,7 +175,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(870, 33);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(914, 33);
             this.tableLayoutPanel1.TabIndex = 32;
             // 
             // AccountControl
@@ -189,7 +189,7 @@
             this.ForeColor = System.Drawing.Color.DodgerBlue;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AccountControl";
-            this.Size = new System.Drawing.Size(870, 33);
+            this.Size = new System.Drawing.Size(914, 35);
             this.DoubleClick += new System.EventHandler(this.AccountFrm_DoubleClick);
             this.contextMenuStrip1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
