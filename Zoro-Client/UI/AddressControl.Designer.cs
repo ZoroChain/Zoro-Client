@@ -44,7 +44,7 @@
             this.lblAddress.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblAddress.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblAddress.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblAddress.Location = new System.Drawing.Point(13, -1);
+            this.lblAddress.Location = new System.Drawing.Point(50, -1);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
             this.lblAddress.Size = new System.Drawing.Size(264, 26);
@@ -59,7 +59,7 @@
             this.btnOpen.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnOpen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnOpen.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnOpen.Location = new System.Drawing.Point(426, 4);
+            this.btnOpen.Location = new System.Drawing.Point(419, 4);
             this.btnOpen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(82, 25);
@@ -82,7 +82,7 @@
             // 查看私钥VToolStripMenuItem
             // 
             this.查看私钥VToolStripMenuItem.Name = "查看私钥VToolStripMenuItem";
-            this.查看私钥VToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.查看私钥VToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.查看私钥VToolStripMenuItem.Text = "View &Private Key";
             this.查看私钥VToolStripMenuItem.Click += new System.EventHandler(this.查看私钥VToolStripMenuItem_Click);
             // 
@@ -91,14 +91,14 @@
             this.复制到剪贴板CToolStripMenuItem.Name = "复制到剪贴板CToolStripMenuItem";
             this.复制到剪贴板CToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.复制到剪贴板CToolStripMenuItem.ShowShortcutKeys = false;
-            this.复制到剪贴板CToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.复制到剪贴板CToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.复制到剪贴板CToolStripMenuItem.Text = "&Copy to Clipboard";
             this.复制到剪贴板CToolStripMenuItem.Click += new System.EventHandler(this.复制到剪贴板CToolStripMenuItem_Click);
             // 
             // 删除DToolStripMenuItem
             // 
             this.删除DToolStripMenuItem.Name = "删除DToolStripMenuItem";
-            this.删除DToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.删除DToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.删除DToolStripMenuItem.Text = "&Delete...";
             this.删除DToolStripMenuItem.Click += new System.EventHandler(this.删除DToolStripMenuItem_Click);
             // 

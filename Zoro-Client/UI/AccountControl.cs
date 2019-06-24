@@ -30,7 +30,6 @@ namespace Zoro_Client.UI
         {
             InitializeComponent();
             Account = account;
-            lblAddress.Text = account.Address;
             Address = account.Address;
             GetBalance();
         }

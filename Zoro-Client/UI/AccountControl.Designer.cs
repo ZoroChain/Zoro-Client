@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lblAddress = new System.Windows.Forms.Label();
             this.lblZoro = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.查看私钥VToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,21 +42,6 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblAddress
-            // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAddress.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblAddress.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblAddress.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblAddress.Location = new System.Drawing.Point(3, 0);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.lblAddress.Size = new System.Drawing.Size(385, 33);
-            this.lblAddress.TabIndex = 21;
-            this.lblAddress.Text = "AcQLYjGbQU2bEQ8RKFXUcf8XvromfUQodq";
-            this.lblAddress.DoubleClick += new System.EventHandler(this.AccountFrm_DoubleClick);
-            // 
             // lblZoro
             // 
             this.lblZoro.AutoSize = true;
@@ -66,7 +50,7 @@
             this.lblZoro.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblZoro.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblZoro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblZoro.Location = new System.Drawing.Point(394, 0);
+            this.lblZoro.Location = new System.Drawing.Point(3, 0);
             this.lblZoro.Name = "lblZoro";
             this.lblZoro.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
             this.lblZoro.Size = new System.Drawing.Size(109, 33);
@@ -115,7 +99,7 @@
             this.lblBct.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblBct.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblBct.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblBct.Location = new System.Drawing.Point(630, 0);
+            this.lblBct.Location = new System.Drawing.Point(646, 0);
             this.lblBct.Name = "lblBct";
             this.lblBct.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
             this.lblBct.Size = new System.Drawing.Size(109, 33);
@@ -131,7 +115,7 @@
             this.btnTransferZoro.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnTransferZoro.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTransferZoro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnTransferZoro.Location = new System.Drawing.Point(534, 4);
+            this.btnTransferZoro.Location = new System.Drawing.Point(531, 4);
             this.btnTransferZoro.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTransferZoro.Name = "btnTransferZoro";
             this.btnTransferZoro.Size = new System.Drawing.Size(70, 25);
@@ -148,7 +132,7 @@
             this.btnTransferBct.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnTransferBct.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTransferBct.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnTransferBct.Location = new System.Drawing.Point(755, 4);
+            this.btnTransferBct.Location = new System.Drawing.Point(831, 4);
             this.btnTransferBct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTransferBct.Name = "btnTransferBct";
             this.btnTransferBct.Size = new System.Drawing.Size(70, 25);
@@ -159,22 +143,21 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 96F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162F));
-            this.tableLayoutPanel1.Controls.Add(this.lblAddress, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnTransferBct, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblZoro, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnTransferZoro, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblBct, 3, 0);
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 528F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 185F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.btnTransferBct, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblZoro, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnTransferZoro, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblBct, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(914, 33);
             this.tableLayoutPanel1.TabIndex = 32;
             // 
@@ -199,7 +182,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblZoro;
         private System.Windows.Forms.Label lblBct;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;

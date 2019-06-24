@@ -30,7 +30,6 @@
         {
             this.lblBalance = new System.Windows.Forms.Label();
             this.lblAsset = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
             this.btnTransfer = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
@@ -38,42 +37,29 @@
             // 
             // lblBalance
             // 
-            this.lblBalance.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblBalance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblBalance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblBalance.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblBalance.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblBalance.Location = new System.Drawing.Point(679, 0);
+            this.lblBalance.Location = new System.Drawing.Point(408, 0);
             this.lblBalance.Name = "lblBalance";
             this.lblBalance.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.lblBalance.Size = new System.Drawing.Size(127, 33);
+            this.lblBalance.Size = new System.Drawing.Size(155, 33);
             this.lblBalance.TabIndex = 28;
             this.lblBalance.Text = "00000000.000000";
             // 
             // lblAsset
             // 
-            this.lblAsset.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblAsset.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAsset.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblAsset.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblAsset.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblAsset.Location = new System.Drawing.Point(320, 0);
+            this.lblAsset.Location = new System.Drawing.Point(3, 0);
             this.lblAsset.Name = "lblAsset";
             this.lblAsset.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.lblAsset.Size = new System.Drawing.Size(351, 33);
+            this.lblAsset.Size = new System.Drawing.Size(399, 33);
             this.lblAsset.TabIndex = 27;
             this.lblAsset.Text = "abc:0x00000000000000000000000";
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAddress.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblAddress.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblAddress.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblAddress.Location = new System.Drawing.Point(3, 0);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.lblAddress.Size = new System.Drawing.Size(311, 33);
-            this.lblAddress.TabIndex = 26;
-            this.lblAddress.Text = "AcQLYjGbQU2bEQ8RKFXUcf8XvromfUQodq";
             // 
             // btnTransfer
             // 
@@ -83,7 +69,7 @@
             this.btnTransfer.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnTransfer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTransfer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnTransfer.Location = new System.Drawing.Point(819, 4);
+            this.btnTransfer.Location = new System.Drawing.Point(569, 4);
             this.btnTransfer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTransfer.Name = "btnTransfer";
             this.btnTransfer.Size = new System.Drawing.Size(82, 25);
@@ -94,22 +80,21 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.9697F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.0303F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
-            this.tableLayoutPanel1.Controls.Add(this.lblAddress, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnTransfer, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblAsset, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblBalance, 2, 0);
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.btnTransfer, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblAsset, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblBalance, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(914, 33);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(666, 33);
             this.tableLayoutPanel1.TabIndex = 30;
             // 
             // AssetControl
@@ -121,7 +106,7 @@
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AssetControl";
-            this.Size = new System.Drawing.Size(914, 35);
+            this.Size = new System.Drawing.Size(666, 35);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -131,7 +116,6 @@
 
         private System.Windows.Forms.Label lblBalance;
         private System.Windows.Forms.Label lblAsset;
-        private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Button btnTransfer;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }

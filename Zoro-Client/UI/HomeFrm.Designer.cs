@@ -77,7 +77,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(605, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(630, 29);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -146,25 +146,25 @@
             // 查看帮助VToolStripMenuItem
             // 
             this.查看帮助VToolStripMenuItem.Name = "查看帮助VToolStripMenuItem";
-            this.查看帮助VToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.查看帮助VToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.查看帮助VToolStripMenuItem.Text = "&Check for Help";
             // 
             // 官网WToolStripMenuItem
             // 
             this.官网WToolStripMenuItem.Name = "官网WToolStripMenuItem";
-            this.官网WToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.官网WToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.官网WToolStripMenuItem.Text = "Official &Web";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(160, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
             // 
             // 关于AntSharesToolStripMenuItem
             // 
             this.关于AntSharesToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.关于AntSharesToolStripMenuItem.Name = "关于AntSharesToolStripMenuItem";
-            this.关于AntSharesToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.关于AntSharesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.关于AntSharesToolStripMenuItem.Text = "&About Zoro";
             // 
             // statusStrip1
@@ -179,10 +179,10 @@
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel3});
             this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.statusStrip1.Location = new System.Drawing.Point(0, 388);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 359);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 17, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(605, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(630, 22);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 6;
             this.statusStrip1.Text = "statusStrip1";
@@ -239,11 +239,12 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.AutoScrollMargin = new System.Drawing.Size(0, 40);
             this.panel1.ContextMenuStrip = this.contextMenuStrip1;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 29);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(605, 359);
+            this.panel1.Size = new System.Drawing.Size(630, 330);
             this.panel1.TabIndex = 7;
             // 
             // contextMenuStrip1
@@ -311,7 +312,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(605, 410);
+            this.ClientSize = new System.Drawing.Size(630, 381);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);

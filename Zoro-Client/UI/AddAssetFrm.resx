@@ -117,6 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>0x0000000000000000000000000000000000000001
+0x0000000000000000000000000000000000000002
+0x193a6faff469c938087cdd8704c7b4ec86008566
+0x6ebfb7b446a6c6690b78fdf24f8fa8fb2ba1c3f8
+0xcb8eb188f859741d7fdcfb709c4abbc925b970eb
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

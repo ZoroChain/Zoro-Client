@@ -32,6 +32,8 @@ namespace Zoro_Client.UI
         {
             InitializeComponent();
             WalletAccount = walletAccount;
+            lblAddress.Text = walletAccount.Address;
+            RefreshAsset();
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -41,14 +43,6 @@ namespace Zoro_Client.UI
 
         private void RefreshBalance()
         {
-            foreach(Control control in panel4.Controls)
-            {
-                if (control is AccountControl)
-                {
-                    ((AccountControl)control).RefreshBalance();
-                }
-            }
-
             foreach (Control control in panel4.Controls)
             {
                 if (control is AssetControl)
@@ -58,22 +52,17 @@ namespace Zoro_Client.UI
             }
         }
 
-        public void RefreshAsset(string asset)
+        public void RefreshAsset()
         {
-            foreach (WalletAccount account in Program.Wallet.GetAccounts())
+            foreach (string asset in Settings.Default.NEP5Watched.OfType<string>().ToArray())
             {
-                AssetControl assetControl = new AssetControl(UInt160.Parse(asset), account);
-                if (assetControl.IsShow)
-                {
-                    assetControl.Parent = panel4;
-                    assetControl.Dock = DockStyle.Top;
-                }
-                else
-                {
-                    assetControl.Dispose();
-                }
+                AssetControl assetControl = new AssetControl(UInt160.Parse(asset), WalletAccount);
+
+                assetControl.Parent = panel4;
+                assetControl.Dock = DockStyle.Top;
+
             }
-        }               
+        }    
 
         private void PublishContractToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -81,6 +70,19 @@ namespace Zoro_Client.UI
             {
                 publishContractFrm.ShowDialog();
             }
+        }
+
+        private void LblAddress_Click(object sender, EventArgs e)
+        {
+            using (ViewPrivateKeyDialog dialog = new ViewPrivateKeyDialog(WalletAccount))
+            {
+                dialog.ShowDialog();
+            }
+        }
+
+        private void BackToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

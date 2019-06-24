@@ -66,27 +66,35 @@ namespace Zoro_Client.UI
                 return;
             }
 
-            using (ScriptBuilder sb = new ScriptBuilder())
+            try
             {
-                if (Symbol == "ZORO" || Symbol == "BCT")
-                    sb.EmitSysCall("Zoro.NativeNEP5.Call", "Transfer", AssetId, Account.ScriptHash, to, new BigInteger(value));
-                else
-                    sb.EmitAppCall(AssetId, "transfer", Account.ScriptHash, to, new BigInteger(value));
+                using (ScriptBuilder sb = new ScriptBuilder())
+                {
+                    if (Symbol == "ZORO" || Symbol == "BCT")
+                        sb.EmitSysCall("Zoro.NativeNEP5.Call", "Transfer", AssetId, Account.ScriptHash, to, new BigInteger(value));
+                    else
+                        sb.EmitAppCall(AssetId, "transfer", Account.ScriptHash, to, new BigInteger(value));
 
-                var tx = ZoroHelper.MakeTransaction(sb.ToArray(), Account.GetKey(), Fixed8.Zero, Fixed8.FromDecimal(0.0001m));
+                    var tx = ZoroHelper.MakeTransaction(sb.ToArray(), Account.GetKey(), Fixed8.Zero, Fixed8.FromDecimal(0.0001m));
 
-                var script = sb.ToArray().ToHexString();
-                Zoro.IO.Json.JArray _params = new Zoro.IO.Json.JArray();
-                _params.Add("");
-                _params.Add(tx.ToArray().ToHexString());
+                    var script = sb.ToArray().ToHexString();
+                    Zoro.IO.Json.JArray _params = new Zoro.IO.Json.JArray();
+                    _params.Add("");
+                    _params.Add(tx.ToArray().ToHexString());
 
-                var info = Handler.Process("estimategas", _params);
+                    var info = Handler.Process("estimategas", _params);
 
-                JObject json_response = JObject.Parse(info.ToString());
-                string json_gas_consumed = json_response["gas_consumed"].ToString();
+                    JObject json_response = JObject.Parse(info.ToString());
+                    string json_gas_consumed = json_response["gas_consumed"].ToString();
 
-                tbxGasLimit.Text = json_gas_consumed;
+                    tbxGasLimit.Text = json_gas_consumed;
 
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Transaction!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
 

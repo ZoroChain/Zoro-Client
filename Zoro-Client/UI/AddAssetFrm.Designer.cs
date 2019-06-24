@@ -61,8 +61,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(465, 191);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "0x193a6faff469c938087cdd8704c7b4ec86008566\r\n0x6ebfb7b446a6c6690b78fdf24f8fa8fb2ba" +
-    "1c3f8\r\n0xcb8eb188f859741d7fdcfb709c4abbc925b970eb\r\n";
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // btnCancel
             // 
