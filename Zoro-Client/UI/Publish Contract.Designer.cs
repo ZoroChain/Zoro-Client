@@ -36,7 +36,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.tbxReturnType = new System.Windows.Forms.TextBox();
             this.btnPublish = new System.Windows.Forms.Button();
-            this.lblBcpFee = new System.Windows.Forms.Label();
+            this.lblZoroFee = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.cbxNeedStorge = new System.Windows.Forms.CheckBox();
             this.cbxNeedCharge = new System.Windows.Forms.CheckBox();
@@ -62,7 +62,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(24, 259);
+            this.label25.Location = new System.Drawing.Point(34, 260);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(46, 17);
             this.label25.TabIndex = 55;
@@ -77,7 +77,7 @@
             this.btnLoadContract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoadContract.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnLoadContract.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnLoadContract.Location = new System.Drawing.Point(488, 16);
+            this.btnLoadContract.Location = new System.Drawing.Point(498, 17);
             this.btnLoadContract.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLoadContract.Name = "btnLoadContract";
             this.btnLoadContract.Size = new System.Drawing.Size(90, 25);
@@ -89,7 +89,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(24, 190);
+            this.label10.Location = new System.Drawing.Point(34, 191);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(103, 17);
             this.label10.TabIndex = 52;
@@ -97,7 +97,7 @@
             // 
             // tbxParameterType
             // 
-            this.tbxParameterType.Location = new System.Drawing.Point(136, 187);
+            this.tbxParameterType.Location = new System.Drawing.Point(146, 188);
             this.tbxParameterType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbxParameterType.Name = "tbxParameterType";
             this.tbxParameterType.Size = new System.Drawing.Size(136, 23);
@@ -107,7 +107,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(297, 190);
+            this.label11.Location = new System.Drawing.Point(307, 191);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(81, 17);
             this.label11.TabIndex = 50;
@@ -115,7 +115,7 @@
             // 
             // tbxReturnType
             // 
-            this.tbxReturnType.Location = new System.Drawing.Point(384, 187);
+            this.tbxReturnType.Location = new System.Drawing.Point(394, 188);
             this.tbxReturnType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbxReturnType.Name = "tbxReturnType";
             this.tbxReturnType.Size = new System.Drawing.Size(194, 23);
@@ -130,28 +130,29 @@
             this.btnPublish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPublish.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnPublish.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnPublish.Location = new System.Drawing.Point(488, 220);
+            this.btnPublish.Location = new System.Drawing.Point(498, 221);
             this.btnPublish.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPublish.Name = "btnPublish";
             this.btnPublish.Size = new System.Drawing.Size(90, 25);
             this.btnPublish.TabIndex = 48;
             this.btnPublish.Text = "Publish";
             this.btnPublish.UseVisualStyleBackColor = false;
+            this.btnPublish.Click += new System.EventHandler(this.BtnPublish_Click);
             // 
-            // lblBcpFee
+            // lblZoroFee
             // 
-            this.lblBcpFee.AutoSize = true;
-            this.lblBcpFee.ForeColor = System.Drawing.Color.Red;
-            this.lblBcpFee.Location = new System.Drawing.Point(419, 226);
-            this.lblBcpFee.Name = "lblBcpFee";
-            this.lblBcpFee.Size = new System.Drawing.Size(39, 17);
-            this.lblBcpFee.TabIndex = 47;
-            this.lblBcpFee.Text = "90.00";
+            this.lblZoroFee.AutoSize = true;
+            this.lblZoroFee.ForeColor = System.Drawing.Color.Red;
+            this.lblZoroFee.Location = new System.Drawing.Point(429, 227);
+            this.lblZoroFee.Name = "lblZoroFee";
+            this.lblZoroFee.Size = new System.Drawing.Size(46, 17);
+            this.lblZoroFee.TabIndex = 47;
+            this.lblZoroFee.Text = "1.0000";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(343, 226);
+            this.label8.Location = new System.Drawing.Point(353, 227);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(70, 17);
             this.label8.TabIndex = 46;
@@ -160,18 +161,19 @@
             // cbxNeedStorge
             // 
             this.cbxNeedStorge.AutoSize = true;
-            this.cbxNeedStorge.Location = new System.Drawing.Point(134, 225);
+            this.cbxNeedStorge.Location = new System.Drawing.Point(144, 226);
             this.cbxNeedStorge.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbxNeedStorge.Name = "cbxNeedStorge";
             this.cbxNeedStorge.Size = new System.Drawing.Size(102, 21);
             this.cbxNeedStorge.TabIndex = 45;
             this.cbxNeedStorge.Text = "Need Storge";
             this.cbxNeedStorge.UseVisualStyleBackColor = true;
+            this.cbxNeedStorge.CheckedChanged += new System.EventHandler(this.CbxNeedStorge_CheckedChanged);
             // 
             // cbxNeedCharge
             // 
             this.cbxNeedCharge.AutoSize = true;
-            this.cbxNeedCharge.Location = new System.Drawing.Point(242, 225);
+            this.cbxNeedCharge.Location = new System.Drawing.Point(252, 226);
             this.cbxNeedCharge.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbxNeedCharge.Name = "cbxNeedCharge";
             this.cbxNeedCharge.Size = new System.Drawing.Size(95, 21);
@@ -182,7 +184,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 88);
+            this.label7.Location = new System.Drawing.Point(38, 89);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(99, 17);
             this.label7.TabIndex = 43;
@@ -190,7 +192,7 @@
             // 
             // tbxContractName
             // 
-            this.tbxContractName.Location = new System.Drawing.Point(136, 86);
+            this.tbxContractName.Location = new System.Drawing.Point(146, 87);
             this.tbxContractName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbxContractName.Name = "tbxContractName";
             this.tbxContractName.Size = new System.Drawing.Size(160, 23);
@@ -200,7 +202,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(323, 89);
+            this.label6.Location = new System.Drawing.Point(333, 90);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 17);
             this.label6.TabIndex = 41;
@@ -208,7 +210,7 @@
             // 
             // tbxVersion
             // 
-            this.tbxVersion.Location = new System.Drawing.Point(384, 85);
+            this.tbxVersion.Location = new System.Drawing.Point(394, 86);
             this.tbxVersion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbxVersion.Name = "tbxVersion";
             this.tbxVersion.Size = new System.Drawing.Size(194, 23);
@@ -218,7 +220,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(77, 120);
+            this.label5.Location = new System.Drawing.Point(87, 121);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 17);
             this.label5.TabIndex = 39;
@@ -226,7 +228,7 @@
             // 
             // tbxAuthor
             // 
-            this.tbxAuthor.Location = new System.Drawing.Point(136, 117);
+            this.tbxAuthor.Location = new System.Drawing.Point(146, 118);
             this.tbxAuthor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbxAuthor.Name = "tbxAuthor";
             this.tbxAuthor.Size = new System.Drawing.Size(162, 23);
@@ -236,7 +238,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(336, 120);
+            this.label4.Location = new System.Drawing.Point(346, 121);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 17);
             this.label4.TabIndex = 37;
@@ -244,7 +246,7 @@
             // 
             // tbxEmail
             // 
-            this.tbxEmail.Location = new System.Drawing.Point(384, 117);
+            this.tbxEmail.Location = new System.Drawing.Point(394, 118);
             this.tbxEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbxEmail.Name = "tbxEmail";
             this.tbxEmail.Size = new System.Drawing.Size(194, 23);
@@ -254,7 +256,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(50, 155);
+            this.label3.Location = new System.Drawing.Point(60, 156);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 17);
             this.label3.TabIndex = 35;
@@ -262,7 +264,7 @@
             // 
             // tbxDescri
             // 
-            this.tbxDescri.Location = new System.Drawing.Point(136, 152);
+            this.tbxDescri.Location = new System.Drawing.Point(146, 153);
             this.tbxDescri.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbxDescri.Name = "tbxDescri";
             this.tbxDescri.Size = new System.Drawing.Size(442, 23);
@@ -272,7 +274,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 55);
+            this.label2.Location = new System.Drawing.Point(44, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 17);
             this.label2.TabIndex = 33;
@@ -281,7 +283,7 @@
             // tbxContractHash
             // 
             this.tbxContractHash.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tbxContractHash.Location = new System.Drawing.Point(136, 52);
+            this.tbxContractHash.Location = new System.Drawing.Point(146, 53);
             this.tbxContractHash.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbxContractHash.Name = "tbxContractHash";
             this.tbxContractHash.ReadOnly = true;
@@ -291,7 +293,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 20);
+            this.label1.Location = new System.Drawing.Point(54, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 17);
             this.label1.TabIndex = 31;
@@ -299,7 +301,7 @@
             // 
             // tbxContractPath
             // 
-            this.tbxContractPath.Location = new System.Drawing.Point(136, 17);
+            this.tbxContractPath.Location = new System.Drawing.Point(146, 18);
             this.tbxContractPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbxContractPath.Name = "tbxContractPath";
             this.tbxContractPath.Size = new System.Drawing.Size(346, 23);
@@ -308,20 +310,21 @@
             // cbxNeedNep4
             // 
             this.cbxNeedNep4.AutoSize = true;
-            this.cbxNeedNep4.Location = new System.Drawing.Point(27, 225);
+            this.cbxNeedNep4.Location = new System.Drawing.Point(37, 226);
             this.cbxNeedNep4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbxNeedNep4.Name = "cbxNeedNep4";
             this.cbxNeedNep4.Size = new System.Drawing.Size(101, 21);
             this.cbxNeedNep4.TabIndex = 29;
             this.cbxNeedNep4.Text = "Dynamic Call";
             this.cbxNeedNep4.UseVisualStyleBackColor = true;
+            this.cbxNeedNep4.CheckedChanged += new System.EventHandler(this.CbxNeedNep4_CheckedChanged);
             // 
             // tbxResult
             // 
             this.tbxResult.AcceptsReturn = true;
             this.tbxResult.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tbxResult.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tbxResult.Location = new System.Drawing.Point(24, 281);
+            this.tbxResult.Location = new System.Drawing.Point(34, 282);
             this.tbxResult.Multiline = true;
             this.tbxResult.Name = "tbxResult";
             this.tbxResult.ReadOnly = true;
@@ -331,14 +334,14 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "contract.avm";
-            this.openFileDialog1.Filter = "ContractFile(*.avm)|*.avm";
+            this.openFileDialog1.Filter = "ContractFile(*.avm)|*.avm|AllFile(*.*)|*.*";
             // 
             // PublishContractFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(609, 360);
+            this.ClientSize = new System.Drawing.Size(630, 381);
             this.Controls.Add(this.tbxResult);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.btnLoadContract);
@@ -347,7 +350,7 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.tbxReturnType);
             this.Controls.Add(this.btnPublish);
-            this.Controls.Add(this.lblBcpFee);
+            this.Controls.Add(this.lblZoroFee);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cbxNeedStorge);
             this.Controls.Add(this.cbxNeedCharge);
@@ -388,7 +391,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox tbxReturnType;
         private System.Windows.Forms.Button btnPublish;
-        private System.Windows.Forms.Label lblBcpFee;
+        private System.Windows.Forms.Label lblZoroFee;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox cbxNeedStorge;
         private System.Windows.Forms.CheckBox cbxNeedCharge;

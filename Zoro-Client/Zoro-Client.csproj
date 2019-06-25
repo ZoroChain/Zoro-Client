@@ -409,7 +409,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="protocol.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="protocol.local.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

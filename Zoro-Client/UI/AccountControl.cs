@@ -18,9 +18,8 @@ namespace Zoro_Client.UI
 {
     public partial class AccountControl : UserControl
     {
-        public string Address;
-        public WalletAccount Account;
-        private RpcHandler handler = new RpcHandler();
+        private string Address;
+        private WalletAccount Account;
 
         public AccountControl()
         {

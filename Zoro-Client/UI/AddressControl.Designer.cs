@@ -44,7 +44,7 @@
             this.lblAddress.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblAddress.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblAddress.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblAddress.Location = new System.Drawing.Point(50, -1);
+            this.lblAddress.Location = new System.Drawing.Point(71, 3);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Padding = new System.Windows.Forms.Padding(0, 9, 0, 0);
             this.lblAddress.Size = new System.Drawing.Size(264, 26);
@@ -59,7 +59,7 @@
             this.btnOpen.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnOpen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnOpen.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnOpen.Location = new System.Drawing.Point(419, 4);
+            this.btnOpen.Location = new System.Drawing.Point(400, 6);
             this.btnOpen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(82, 25);
@@ -110,7 +110,7 @@
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.lblAddress);
             this.Name = "AddressControl";
-            this.Size = new System.Drawing.Size(530, 33);
+            this.Size = new System.Drawing.Size(494, 33);
             this.DoubleClick += new System.EventHandler(this.AddressControl_DoubleClick);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);

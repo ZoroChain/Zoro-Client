@@ -16,8 +16,8 @@ namespace Zoro_Client.UI
 {
     public partial class AddressControl : UserControl
     {
-        public string Address;
-        public WalletAccount Account;
+        private string Address;
+        private WalletAccount Account;
 
         public AddressControl()
         {

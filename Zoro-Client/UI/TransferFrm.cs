@@ -20,7 +20,6 @@ namespace Zoro_Client.UI
 {
     public partial class TransferFrm : Form
     {
-        private RpcHandler Handler = new RpcHandler();
         private WalletAccount Account;
         private UInt160 AssetId;
         private string Symbol;
@@ -76,13 +75,12 @@ namespace Zoro_Client.UI
                         sb.EmitAppCall(AssetId, "transfer", Account.ScriptHash, to, new BigInteger(value));
 
                     var tx = ZoroHelper.MakeTransaction(sb.ToArray(), Account.GetKey(), Fixed8.Zero, Fixed8.FromDecimal(0.0001m));
-
-                    var script = sb.ToArray().ToHexString();
+                                      
                     Zoro.IO.Json.JArray _params = new Zoro.IO.Json.JArray();
                     _params.Add("");
                     _params.Add(tx.ToArray().ToHexString());
 
-                    var info = Handler.Process("estimategas", _params);
+                    var info = Program.Handler.Process("estimategas", _params);
 
                     JObject json_response = JObject.Parse(info.ToString());
                     string json_gas_consumed = json_response["gas_consumed"].ToString();
@@ -162,7 +160,7 @@ namespace Zoro_Client.UI
                 _params.Add("");
                 _params.Add(tx.ToArray().ToHexString());
 
-                var result = Handler.Process("sendrawtransaction", _params);
+                var result = Program.Handler.Process("sendrawtransaction", _params);
 
                 string[] text = new string[] { "Result : " + result.ToString(), "Txid : " + txid };
 

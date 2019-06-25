@@ -9,6 +9,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Zoro.Network.P2P;
+using Zoro.Network.RPC;
 using Zoro.Wallets;
 using Zoro_Client.Properties;
 using Zoro_Client.UI;
@@ -20,6 +21,7 @@ namespace Zoro_Client
         public static MainService MainService;
         public static Wallet Wallet;
         public static HomeForm HomeForm;
+        public static RpcHandler Handler = new RpcHandler();
 
         private static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {

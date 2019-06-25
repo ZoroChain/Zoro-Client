@@ -52,7 +52,7 @@
             // 
             this.lblAsset.AutoSize = true;
             this.lblAsset.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblAsset.Location = new System.Drawing.Point(75, 12);
+            this.lblAsset.Location = new System.Drawing.Point(111, 22);
             this.lblAsset.Name = "lblAsset";
             this.lblAsset.Size = new System.Drawing.Size(344, 17);
             this.lblAsset.TabIndex = 0;
@@ -62,7 +62,7 @@
             // 
             this.tbxFrom.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tbxFrom.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tbxFrom.Location = new System.Drawing.Point(78, 45);
+            this.tbxFrom.Location = new System.Drawing.Point(114, 55);
             this.tbxFrom.Name = "tbxFrom";
             this.tbxFrom.ReadOnly = true;
             this.tbxFrom.Size = new System.Drawing.Size(341, 23);
@@ -72,7 +72,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(28, 48);
+            this.label1.Location = new System.Drawing.Point(64, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 17);
             this.label1.TabIndex = 2;
@@ -82,7 +82,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(27, 12);
+            this.label2.Location = new System.Drawing.Point(63, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 17);
             this.label2.TabIndex = 3;
@@ -92,7 +92,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(43, 91);
+            this.label3.Location = new System.Drawing.Point(79, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(26, 17);
             this.label3.TabIndex = 5;
@@ -101,7 +101,7 @@
             // tbxTo
             // 
             this.tbxTo.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tbxTo.Location = new System.Drawing.Point(78, 88);
+            this.tbxTo.Location = new System.Drawing.Point(114, 98);
             this.tbxTo.Name = "tbxTo";
             this.tbxTo.Size = new System.Drawing.Size(341, 23);
             this.tbxTo.TabIndex = 1;
@@ -110,7 +110,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(9, 182);
+            this.label4.Location = new System.Drawing.Point(45, 192);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 17);
             this.label4.TabIndex = 7;
@@ -120,7 +120,7 @@
             // 
             this.tbxGasLimit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tbxGasLimit.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tbxGasLimit.Location = new System.Drawing.Point(78, 179);
+            this.tbxGasLimit.Location = new System.Drawing.Point(114, 189);
             this.tbxGasLimit.Name = "tbxGasLimit";
             this.tbxGasLimit.ReadOnly = true;
             this.tbxGasLimit.Size = new System.Drawing.Size(97, 23);
@@ -130,7 +130,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(187, 136);
+            this.label5.Location = new System.Drawing.Point(223, 146);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 17);
             this.label5.TabIndex = 9;
@@ -140,7 +140,7 @@
             // 
             this.tbxGasPrice.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tbxGasPrice.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tbxGasPrice.Location = new System.Drawing.Point(254, 133);
+            this.tbxGasPrice.Location = new System.Drawing.Point(290, 143);
             this.tbxGasPrice.Name = "tbxGasPrice";
             this.tbxGasPrice.Size = new System.Drawing.Size(60, 23);
             this.tbxGasPrice.TabIndex = 8;
@@ -155,7 +155,7 @@
             this.btnEstimateGas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstimateGas.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnEstimateGas.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnEstimateGas.Location = new System.Drawing.Point(329, 132);
+            this.btnEstimateGas.Location = new System.Drawing.Point(365, 142);
             this.btnEstimateGas.Name = "btnEstimateGas";
             this.btnEstimateGas.Size = new System.Drawing.Size(90, 25);
             this.btnEstimateGas.TabIndex = 36;
@@ -171,7 +171,7 @@
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSend.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnSend.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSend.Location = new System.Drawing.Point(224, 178);
+            this.btnSend.Location = new System.Drawing.Point(260, 188);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(90, 25);
             this.btnSend.TabIndex = 35;
@@ -183,7 +183,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(26, 136);
+            this.label6.Location = new System.Drawing.Point(62, 146);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 17);
             this.label6.TabIndex = 38;
@@ -193,7 +193,7 @@
             // 
             this.tbxValue.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tbxValue.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tbxValue.Location = new System.Drawing.Point(78, 133);
+            this.tbxValue.Location = new System.Drawing.Point(114, 143);
             this.tbxValue.Name = "tbxValue";
             this.tbxValue.Size = new System.Drawing.Size(97, 23);
             this.tbxValue.TabIndex = 37;
@@ -207,7 +207,7 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCancel.Location = new System.Drawing.Point(329, 178);
+            this.btnCancel.Location = new System.Drawing.Point(365, 188);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(90, 25);
             this.btnCancel.TabIndex = 34;
@@ -220,7 +220,7 @@
             this.tbxResult.AcceptsReturn = true;
             this.tbxResult.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tbxResult.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tbxResult.Location = new System.Drawing.Point(78, 232);
+            this.tbxResult.Location = new System.Drawing.Point(114, 242);
             this.tbxResult.Multiline = true;
             this.tbxResult.Name = "tbxResult";
             this.tbxResult.ReadOnly = true;
@@ -231,7 +231,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(23, 234);
+            this.label7.Location = new System.Drawing.Point(59, 244);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 17);
             this.label7.TabIndex = 40;
@@ -242,7 +242,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(470, 326);
+            this.ClientSize = new System.Drawing.Size(526, 356);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbxResult);
             this.Controls.Add(this.label6);

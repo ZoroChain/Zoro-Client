@@ -120,9 +120,9 @@
   <data name="textBox1.Text" xml:space="preserve">
     <value>0x0000000000000000000000000000000000000001
 0x0000000000000000000000000000000000000002
-0x193a6faff469c938087cdd8704c7b4ec86008566
-0x6ebfb7b446a6c6690b78fdf24f8fa8fb2ba1c3f8
-0xcb8eb188f859741d7fdcfb709c4abbc925b970eb
+0x8f284bde214f2d1110a455453eba52b0b7369993
+0xacbc3c946c90f7f3c21e085d461804b4ce176706
+0x313fd4c13f39be4a6be786439254722d1dc22abf
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />

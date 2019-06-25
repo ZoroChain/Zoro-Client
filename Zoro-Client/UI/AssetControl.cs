@@ -19,7 +19,6 @@ namespace Zoro_Client.UI
 {
     public partial class AssetControl : UserControl
     {
-        private RpcHandler Handler = new RpcHandler();
         //public bool IsShow = false;
         private WalletAccount Account;
         private UInt160 AssetHash;
@@ -46,40 +45,44 @@ namespace Zoro_Client.UI
 
         private void GetBalance(UInt160 assetHash, WalletAccount account)
         {
-            using (ScriptBuilder sb = new ScriptBuilder())
+            try
             {
-                if (assetHash == Genesis.BcpContractAddress || assetHash == Genesis.BctContractAddress)
+                using (ScriptBuilder sb = new ScriptBuilder())
                 {
-                    sb.EmitSysCall("Zoro.NativeNEP5.Call", "BalanceOf", assetHash, Account.ScriptHash);
-                    sb.EmitSysCall("Zoro.NativeNEP5.Call", "Decimals", assetHash);
-                    sb.EmitSysCall("Zoro.NativeNEP5.Call", "Symbol", assetHash);
-                }
-                else
-                {
-                    sb.EmitAppCall(assetHash, "balanceOf", account.ScriptHash);
-                    sb.EmitAppCall(assetHash, "decimals");
-                    sb.EmitAppCall(assetHash, "symbol");
-                }
-
-                var script = sb.ToArray().ToHexString();
-                Zoro.IO.Json.JArray _params = new Zoro.IO.Json.JArray();
-                _params.Add("");
-                _params.Add(script);
-
-                var info = Handler.Process("invokescript", _params);
-
-                JObject json = JObject.Parse(info.ToString());
-                if (json.ContainsKey("stack"))
-                {
-                    JArray stack = json["stack"] as JArray;
-                    string decimals;
-                    string symbol;
-                    try
+                    if (assetHash == Genesis.BcpContractAddress || assetHash == Genesis.BctContractAddress)
                     {
+                        sb.EmitSysCall("Zoro.NativeNEP5.Call", "BalanceOf", assetHash, Account.ScriptHash);
+                        sb.EmitSysCall("Zoro.NativeNEP5.Call", "Decimals", assetHash);
+                        sb.EmitSysCall("Zoro.NativeNEP5.Call", "Symbol", assetHash);
+                    }
+                    else
+                    {
+                        sb.EmitAppCall(assetHash, "balanceOf", account.ScriptHash);
+                        sb.EmitAppCall(assetHash, "decimals");
+                        sb.EmitAppCall(assetHash, "symbol");
+                    }
+
+                    var script = sb.ToArray().ToHexString();
+                    Zoro.IO.Json.JArray _params = new Zoro.IO.Json.JArray();
+                    _params.Add("");
+                    _params.Add(script);
+
+
+                    Zoro.IO.Json.JObject info;
+                    info = Program.Handler.Process("invokescript", _params);
+
+
+                    JObject json = JObject.Parse(info.ToString());
+                    string decimals;
+                    string symbol = "";
+                    decimal balance = 0.00m;
+
+                    if (json.ContainsKey("stack"))
+                    {
+                        JArray stack = json["stack"] as JArray;
+                        
                         symbol = Encoding.UTF8.GetString(ZoroHelper.HexString2Bytes(stack[2]["value"].ToString()));
                         decimals = BigInteger.Parse(stack[1]["value"].ToString()).ToString();
-
-                        this.lblAsset.Text = assetHash.ToString() + "(" + symbol + ")";
 
                         if (stack[0]["value"].ToString() == "" || stack[1]["value"].ToString() == "" || stack[2]["value"].ToString() == "")
                         {
@@ -90,26 +93,26 @@ namespace Zoro_Client.UI
                         {
                             string value = ZoroHelper.GetJsonValue((JObject)stack[0]);
 
-                            decimal balance = Math.Round(decimal.Parse(value) / (decimal)Math.Pow(10, double.Parse(decimals)), int.Parse(decimals));
+                            balance = Math.Round(decimal.Parse(value) / (decimal)Math.Pow(10, double.Parse(decimals)), int.Parse(decimals));
 
-                            this.lblBalance.Text = balance.ToString();
-
-                            if(balance==0)
-                                this.btnTransfer.Enabled = false;
+                            if (balance != 0)
+                                this.btnTransfer.Enabled = true;
                         }
 
                         Account = account;
                         AssetHash = assetHash;
                         AssetSymbol = symbol;
                         Decimals = int.Parse(decimals);
-                    }
-                    catch
-                    {
-                        //this.Dispose();
-                        return;
+
                     }
 
+                    this.lblAsset.Text = assetHash.ToString() + "(" + symbol + ")";
+                    this.lblBalance.Text = balance.ToString();
                 }
+            }
+            catch
+            {
+                return;
             }
         }
 

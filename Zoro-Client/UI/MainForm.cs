@@ -22,7 +22,7 @@ namespace Zoro_Client.UI
 {
     public partial class MainForm : Form
     {
-        public WalletAccount WalletAccount;
+        private WalletAccount WalletAccount;
         public MainForm()
         {
             InitializeComponent();
@@ -43,30 +43,44 @@ namespace Zoro_Client.UI
 
         private void RefreshBalance()
         {
-            foreach (Control control in panel4.Controls)
+            try
             {
-                if (control is AssetControl)
+                foreach (Control control in panel4.Controls)
                 {
-                    ((AssetControl)control).RefreshBalance();
+                    if (control is AssetControl)
+                    {
+                        ((AssetControl)control).RefreshBalance();
+                    }
                 }
+            }
+            catch
+            {
+                return;
             }
         }
 
         public void RefreshAsset()
         {
-            foreach (string asset in Settings.Default.NEP5Watched.OfType<string>().ToArray())
+            try
             {
-                AssetControl assetControl = new AssetControl(UInt160.Parse(asset), WalletAccount);
+                foreach (string asset in Settings.Default.NEP5Watched.OfType<string>().ToArray())
+                {
+                    AssetControl assetControl = new AssetControl(UInt160.Parse(asset), WalletAccount);
 
-                assetControl.Parent = panel4;
-                assetControl.Dock = DockStyle.Top;
+                    assetControl.Parent = panel4;
+                    assetControl.Dock = DockStyle.Top;
 
+                }
+            }
+            catch
+            {
+                return;
             }
         }    
 
         private void PublishContractToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (PublishContractFrm publishContractFrm = new PublishContractFrm())
+            using (PublishContractFrm publishContractFrm = new PublishContractFrm(WalletAccount))
             {
                 publishContractFrm.ShowDialog();
             }
